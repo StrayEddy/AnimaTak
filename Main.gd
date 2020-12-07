@@ -57,6 +57,7 @@ func select_rabbit_attack():
 
 func move_rabbit(pos):
 	current_rabbit.translation = pos
+	$Camera.move_to(pos.x, pos.z)
 	current_rabbit.has_moved = true
 	$HUD.disable_move_action()
 	check_for_next_action()

@@ -15,3 +15,9 @@ func get_ready_to_play():
 	has_played = false
 	has_moved = false
 	has_attacked = false
+
+func attack():
+	pass
+
+func hurt():
+	pass
