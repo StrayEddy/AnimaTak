@@ -25,5 +25,5 @@ margin_top = 24.0
 margin_right = 60.0
 margin_bottom = 44.0
 text = "ATTACK"
-[connection signal="pressed" from="Actions/MoveButton" to="." method="_on_MoveButton_pressed"]
-[connection signal="pressed" from="Actions/AttackButton" to="." method="_on_AttackButton_pressed"]
+[connection signal="button_up" from="Actions/MoveButton" to="." method="_on_MoveButton_button_up"]
+[connection signal="button_up" from="Actions/AttackButton" to="." method="_on_AttackButton_button_up"]

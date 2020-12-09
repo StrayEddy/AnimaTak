@@ -3,20 +3,22 @@
 [ext_resource path="res://Rabbit2D.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Rabbit.gd" type="Script" id=2]
 
-[sub_resource type="ViewportTexture" id=1]
+[sub_resource type="ViewportTexture" id=3]
 viewport_path = NodePath("MeshInstance/Viewport")
 
 [sub_resource type="SpatialMaterial" id=2]
 flags_transparent = true
 albedo_color = Color( 0, 0, 0, 0.545098 )
 
-[node name="Rabbit" type="Spatial"]
+[node name="Rabbit" type="Spatial" groups=[
+"Rabbit",
+]]
 transform = Transform( 0.212132, -0.15, 0.15, 0, 0.212132, 0.212132, -0.212132, -0.15, 0.15, 0, 0, 0 )
 script = ExtResource( 2 )
 
 [node name="MeshInstance" type="Sprite3D" parent="."]
 transform = Transform( 1, 0, 0, 0, 0.999999, -8.64267e-07, 0, -1.78814e-07, 0.999999, -0.801517, 2.4991, 0.837432 )
-texture = SubResource( 1 )
+texture = SubResource( 3 )
 
 [node name="Viewport" type="Viewport" parent="MeshInstance"]
 size = Vector2( 800, 600 )

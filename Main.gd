@@ -59,12 +59,14 @@ func move_rabbit(pos):
 	current_rabbit.translation = pos
 	$Camera.move_to(pos.x, pos.z)
 	current_rabbit.has_moved = true
-	$HUD.disable_move_action()
 	check_for_next_action()
 
 func attack_with_rabbit(pos):
+	current_rabbit.connect("attack_finished", self, "attack_finished")
+	current_rabbit.attack(get_rabbit_at(pos))
+
+func attack_finished():
 	current_rabbit.has_attacked = true
-	$HUD.disable_attack_action()
 	check_for_next_action()
 
 func check_for_next_action():
@@ -72,3 +74,9 @@ func check_for_next_action():
 		current_rabbit.has_played = true
 		$HUD.reset()
 		next_action()
+
+func get_rabbit_at(pos):
+	for rabbit in get_tree().get_nodes_in_group("Rabbit"):
+		if (rabbit.translation.x == pos.x) and (rabbit.translation.z == pos.z):
+			return rabbit
+	return null

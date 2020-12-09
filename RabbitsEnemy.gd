@@ -16,7 +16,7 @@ func add_rabbits():
 	for i in 5:
 		var rabbit = rabbit_scene.instance()
 		add_child(rabbit)
-		rabbit.translation = Vector3(i*3, 0, 0)
+		rabbit.translation = Vector3(i*3, 0, 7)
 
 func get_ready_to_play():
 	for rabbit in get_children():

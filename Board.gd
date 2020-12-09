@@ -30,11 +30,11 @@ func _input(event):
 	if is_showing_move_spots or is_showing_attack_spots:
 		if event.is_action_released("ui_up") and is_nearby_tile_reachable(0,-1):
 			$Selector.translation.z -= 1
-		if event.is_action_pressed("ui_down") and is_nearby_tile_reachable(0,+1):
+		if event.is_action_released("ui_down") and is_nearby_tile_reachable(0,+1):
 			$Selector.translation.z += 1
-		if event.is_action_pressed("ui_left") and is_nearby_tile_reachable(-1,0):
+		if event.is_action_released("ui_left") and is_nearby_tile_reachable(-1,0):
 			$Selector.translation.x -= 1
-		if event.is_action_pressed("ui_right") and is_nearby_tile_reachable(+1,0):
+		if event.is_action_released("ui_right") and is_nearby_tile_reachable(+1,0):
 			$Selector.translation.x += 1
 	
 	if event.is_action_released("ui_accept"):
@@ -75,7 +75,8 @@ func get_tiles_within_reach(position, limit):
 	
 	for w in range(min_w, max_w):
 		for h in range(min_h, max_h):
-			close_tiles.append(tiles[w][h])
+			if !(position.x == w and position.z == h):
+				close_tiles.append(tiles[w][h])
 	
 	return close_tiles
 

@@ -29,8 +29,11 @@ func reset():
 	$Actions/MoveButton.disabled = false
 	$Actions/AttackButton.disabled = false
 
-func _on_MoveButton_pressed():
+func _on_MoveButton_button_up():
+	disable_move_action()
 	emit_signal("move_action")
 
-func _on_AttackButton_pressed():
+func _on_AttackButton_button_up():
+	disable_attack_action()
+	disable_move_action()
 	emit_signal("attack_action")

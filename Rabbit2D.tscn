@@ -1,11 +1,1107 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://assets/rabbit/body-parts.png" type="Texture" id=1]
+
+[sub_resource type="Animation" id=2]
+resource_name = "attack"
+tracks/0/type = "bezier"
+tracks/0/path = NodePath("Skeleton2D/hip/chest:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( 4.19971, -0.25, 0, 0.25, 0, 38.8085, -0.25, 0, 0.25, 0, 4.19971, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5, 1 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath("Skeleton2D/hip/chest:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( -195.228, -0.25, 0, 0.25, 0, -188.936, -0.25, 0, 0.25, 0, -195.228, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5, 1 )
+}
+tracks/2/type = "bezier"
+tracks/2/path = NodePath("Skeleton2D/hip/chest/armL:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"points": PoolRealArray( 58.9388, -0.25, 0, 0.25, 0, -84.4754, -0.25, 0, 0.25, 0, 77.4579, -0.25, 0, 0.25, 0, 58.9388, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5, 0.8, 0.9 )
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "die"
+tracks/0/type = "bezier"
+tracks/0/path = NodePath("Skeleton2D/hip:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( 809.574, -0.25, 0, 0.25, 0, 809.574, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath("Skeleton2D/hip:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( 738.141, -0.25, 0, 0.25, 0, 738.141, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5 )
+}
+tracks/2/type = "bezier"
+tracks/2/path = NodePath("Skeleton2D/hip:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, -83.7094, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5 )
+}
+tracks/3/type = "bezier"
+tracks/3/path = NodePath("Skeleton2D/hip:scale:x")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/4/type = "bezier"
+tracks/4/path = NodePath("Skeleton2D/hip:scale:y")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/5/type = "bezier"
+tracks/5/path = NodePath("Skeleton2D/hip/chest:position:x")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"points": PoolRealArray( 4.19971, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/6/type = "bezier"
+tracks/6/path = NodePath("Skeleton2D/hip/chest:position:y")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"points": PoolRealArray( -195.228, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/7/type = "bezier"
+tracks/7/path = NodePath("Skeleton2D/hip/chest:rotation_degrees")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/8/type = "bezier"
+tracks/8/path = NodePath("Skeleton2D/hip/chest:scale:x")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/9/type = "bezier"
+tracks/9/path = NodePath("Skeleton2D/hip/chest:scale:y")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/10/type = "bezier"
+tracks/10/path = NodePath("Skeleton2D/hip/chest/head:position:x")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"points": PoolRealArray( 0.620789, -0.25, 0, 0.25, 0, 0.620789, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5 )
+}
+tracks/11/type = "bezier"
+tracks/11/path = NodePath("Skeleton2D/hip/chest/head:position:y")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"points": PoolRealArray( -31.498, -0.25, 0, 0.25, 0, -31.498, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5 )
+}
+tracks/12/type = "bezier"
+tracks/12/path = NodePath("Skeleton2D/hip/chest/head:rotation_degrees")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, -15.3351, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5 )
+}
+tracks/13/type = "bezier"
+tracks/13/path = NodePath("Skeleton2D/hip/chest/head:scale:x")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/14/type = "bezier"
+tracks/14/path = NodePath("Skeleton2D/hip/chest/head:scale:y")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/15/type = "bezier"
+tracks/15/path = NodePath("Skeleton2D/hip/chest/head/earR:position:x")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"points": PoolRealArray( -96.1414, -0.25, 0, 0.25, 0, -66.5538, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5 )
+}
+tracks/16/type = "bezier"
+tracks/16/path = NodePath("Skeleton2D/hip/chest/head/earR:position:y")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"points": PoolRealArray( -208.514, -0.25, 0, 0.25, 0, -194.247, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5 )
+}
+tracks/17/type = "bezier"
+tracks/17/path = NodePath("Skeleton2D/hip/chest/head/earR:rotation_degrees")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"points": PoolRealArray( -117.946, -0.25, 0, 0.25, 0, -84.8274, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5 )
+}
+tracks/18/type = "bezier"
+tracks/18/path = NodePath("Skeleton2D/hip/chest/head/earR:scale:x")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/19/type = "bezier"
+tracks/19/path = NodePath("Skeleton2D/hip/chest/head/earR:scale:y")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/20/type = "bezier"
+tracks/20/path = NodePath("Skeleton2D/hip/chest/head/earL:position:x")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/keys = {
+"points": PoolRealArray( -18.0942, -0.25, 0, 0.25, 0, -18.0942, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5 )
+}
+tracks/21/type = "bezier"
+tracks/21/path = NodePath("Skeleton2D/hip/chest/head/earL:position:y")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/keys = {
+"points": PoolRealArray( -231.003, -0.25, 0, 0.25, 0, -231.003, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5 )
+}
+tracks/22/type = "bezier"
+tracks/22/path = NodePath("Skeleton2D/hip/chest/head/earL:rotation_degrees")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/keys = {
+"points": PoolRealArray( -87.9016, -0.25, 0, 0.25, 0, -88.6466, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5 )
+}
+tracks/23/type = "bezier"
+tracks/23/path = NodePath("Skeleton2D/hip/chest/head/earL:scale:x")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/24/type = "bezier"
+tracks/24/path = NodePath("Skeleton2D/hip/chest/head/earL:scale:y")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/25/type = "bezier"
+tracks/25/path = NodePath("Skeleton2D/hip/chest/armR:position:x")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/keys = {
+"points": PoolRealArray( -121.053, -0.25, 0, 0.25, 0, -121.053, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5 )
+}
+tracks/26/type = "bezier"
+tracks/26/path = NodePath("Skeleton2D/hip/chest/armR:position:y")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/keys = {
+"points": PoolRealArray( -5.41919, -0.25, 0, 0.25, 0, -5.41919, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5 )
+}
+tracks/27/type = "bezier"
+tracks/27/path = NodePath("Skeleton2D/hip/chest/armR:rotation_degrees")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/keys = {
+"points": PoolRealArray( 125.592, -0.25, 0, 0.25, 0, 93.5033, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5 )
+}
+tracks/28/type = "bezier"
+tracks/28/path = NodePath("Skeleton2D/hip/chest/armR:scale:x")
+tracks/28/interp = 1
+tracks/28/loop_wrap = true
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/29/type = "bezier"
+tracks/29/path = NodePath("Skeleton2D/hip/chest/armR:scale:y")
+tracks/29/interp = 1
+tracks/29/loop_wrap = true
+tracks/29/imported = false
+tracks/29/enabled = true
+tracks/29/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/30/type = "bezier"
+tracks/30/path = NodePath("Skeleton2D/hip/chest/armL:position:x")
+tracks/30/interp = 1
+tracks/30/loop_wrap = true
+tracks/30/imported = false
+tracks/30/enabled = true
+tracks/30/keys = {
+"points": PoolRealArray( 77.4194, -0.25, 0, 0.25, 0, 77.4194, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5 )
+}
+tracks/31/type = "bezier"
+tracks/31/path = NodePath("Skeleton2D/hip/chest/armL:position:y")
+tracks/31/interp = 1
+tracks/31/loop_wrap = true
+tracks/31/imported = false
+tracks/31/enabled = true
+tracks/31/keys = {
+"points": PoolRealArray( -2.57703, -0.25, 0, 0.25, 0, -2.57703, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5 )
+}
+tracks/32/type = "bezier"
+tracks/32/path = NodePath("Skeleton2D/hip/chest/armL:rotation_degrees")
+tracks/32/interp = 1
+tracks/32/loop_wrap = true
+tracks/32/imported = false
+tracks/32/enabled = true
+tracks/32/keys = {
+"points": PoolRealArray( 54.5437, -0.25, 0, 0.25, 0, 81.4388, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5 )
+}
+tracks/33/type = "bezier"
+tracks/33/path = NodePath("Skeleton2D/hip/chest/armL:scale:x")
+tracks/33/interp = 1
+tracks/33/loop_wrap = true
+tracks/33/imported = false
+tracks/33/enabled = true
+tracks/33/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/34/type = "bezier"
+tracks/34/path = NodePath("Skeleton2D/hip/chest/armL:scale:y")
+tracks/34/interp = 1
+tracks/34/loop_wrap = true
+tracks/34/imported = false
+tracks/34/enabled = true
+tracks/34/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/35/type = "bezier"
+tracks/35/path = NodePath("Skeleton2D/hip/legR:position:x")
+tracks/35/interp = 1
+tracks/35/loop_wrap = true
+tracks/35/imported = false
+tracks/35/enabled = true
+tracks/35/keys = {
+"points": PoolRealArray( -69.2957, -0.25, 0, 0.25, 0, -69.2957, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5 )
+}
+tracks/36/type = "bezier"
+tracks/36/path = NodePath("Skeleton2D/hip/legR:position:y")
+tracks/36/interp = 1
+tracks/36/loop_wrap = true
+tracks/36/imported = false
+tracks/36/enabled = true
+tracks/36/keys = {
+"points": PoolRealArray( 61.9461, -0.25, 0, 0.25, 0, 61.9461, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5 )
+}
+tracks/37/type = "bezier"
+tracks/37/path = NodePath("Skeleton2D/hip/legR:rotation_degrees")
+tracks/37/interp = 1
+tracks/37/loop_wrap = true
+tracks/37/imported = false
+tracks/37/enabled = true
+tracks/37/keys = {
+"points": PoolRealArray( 41.0406, -0.25, 0, 0.25, 0, 86.6136, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5 )
+}
+tracks/38/type = "bezier"
+tracks/38/path = NodePath("Skeleton2D/hip/legR:scale:x")
+tracks/38/interp = 1
+tracks/38/loop_wrap = true
+tracks/38/imported = false
+tracks/38/enabled = true
+tracks/38/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/39/type = "bezier"
+tracks/39/path = NodePath("Skeleton2D/hip/legR:scale:y")
+tracks/39/interp = 1
+tracks/39/loop_wrap = true
+tracks/39/imported = false
+tracks/39/enabled = true
+tracks/39/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/40/type = "bezier"
+tracks/40/path = NodePath("Skeleton2D/hip/legL:position:x")
+tracks/40/interp = 1
+tracks/40/loop_wrap = true
+tracks/40/imported = false
+tracks/40/enabled = true
+tracks/40/keys = {
+"points": PoolRealArray( 34.002, -0.25, 0, 0.25, 0, 34.002, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5 )
+}
+tracks/41/type = "bezier"
+tracks/41/path = NodePath("Skeleton2D/hip/legL:position:y")
+tracks/41/interp = 1
+tracks/41/loop_wrap = true
+tracks/41/imported = false
+tracks/41/enabled = true
+tracks/41/keys = {
+"points": PoolRealArray( 44.2883, -0.25, 0, 0.25, 0, 44.2883, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5 )
+}
+tracks/42/type = "bezier"
+tracks/42/path = NodePath("Skeleton2D/hip/legL:rotation_degrees")
+tracks/42/interp = 1
+tracks/42/loop_wrap = true
+tracks/42/imported = false
+tracks/42/enabled = true
+tracks/42/keys = {
+"points": PoolRealArray( 41.0406, -0.25, 0, 0.25, 0, 82.1706, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5 )
+}
+tracks/43/type = "bezier"
+tracks/43/path = NodePath("Skeleton2D/hip/legL:scale:x")
+tracks/43/interp = 1
+tracks/43/loop_wrap = true
+tracks/43/imported = false
+tracks/43/enabled = true
+tracks/43/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/44/type = "bezier"
+tracks/44/path = NodePath("Skeleton2D/hip/legL:scale:y")
+tracks/44/interp = 1
+tracks/44/loop_wrap = true
+tracks/44/imported = false
+tracks/44/enabled = true
+tracks/44/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "hurt"
+tracks/0/type = "bezier"
+tracks/0/path = NodePath("Skeleton2D/hip/chest:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( 4.19971, -0.25, 0, 0.25, 0, -65.0176, -0.25, 0, 0.25, 0, 4.19971, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.3, 0.8 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath("Skeleton2D/hip/chest:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( -195.228, -0.25, 0, 0.25, 0, -185.79, -0.25, 0, 0.25, 0, -195.228, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.3, 0.8 )
+}
+tracks/2/type = "bezier"
+tracks/2/path = NodePath("Skeleton2D/hip/chest:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, -23.5807, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.3, 0.8 )
+}
+tracks/3/type = "bezier"
+tracks/3/path = NodePath("Skeleton2D/hip/chest/armR:position:x")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"points": PoolRealArray( -121.053, -0.25, 0, 0.25, 0, -121.053, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.8 )
+}
+tracks/4/type = "bezier"
+tracks/4/path = NodePath("Skeleton2D/hip/chest/armR:position:y")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"points": PoolRealArray( -5.41919, -0.25, 0, 0.25, 0, -5.41919, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.8 )
+}
+tracks/5/type = "bezier"
+tracks/5/path = NodePath("Skeleton2D/hip/chest/armR:rotation_degrees")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"points": PoolRealArray( 125.592, -0.25, 0, 0.25, 0, 224.713, -0.25, 0, 0.25, 0, 125.592, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.3, 0.8 )
+}
+tracks/6/type = "bezier"
+tracks/6/path = NodePath("Skeleton2D/hip/chest/armL:position:x")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"points": PoolRealArray( 77.4194, -0.25, 0, 0.25, 0, 77.4194, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.8 )
+}
+tracks/7/type = "bezier"
+tracks/7/path = NodePath("Skeleton2D/hip/chest/armL:position:y")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"points": PoolRealArray( -2.57703, -0.25, 0, 0.25, 0, -2.57703, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.8 )
+}
+tracks/8/type = "bezier"
+tracks/8/path = NodePath("Skeleton2D/hip/chest/armL:rotation_degrees")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"points": PoolRealArray( 54.5437, -0.25, 0, 0.25, 0, -68.8732, -0.25, 0, 0.25, 0, 54.5437, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.3, 0.8 )
+}
+tracks/9/type = "bezier"
+tracks/9/path = NodePath("Skeleton2D/hip/chest/head/earR:position:x")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"points": PoolRealArray( -96.1414, -0.25, 0, 0.25, 0, -99.3595, -0.25, 0, 0.25, 0, -96.1414, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.3, 0.8 )
+}
+tracks/10/type = "bezier"
+tracks/10/path = NodePath("Skeleton2D/hip/chest/head/earR:position:y")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"points": PoolRealArray( -208.514, -0.25, 0, 0.25, 0, -193.718, -0.25, 0, 0.25, 0, -208.514, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.3, 0.8 )
+}
+tracks/11/type = "bezier"
+tracks/11/path = NodePath("Skeleton2D/hip/chest/head/earR:rotation_degrees")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"points": PoolRealArray( -117.946, -0.25, 0, 0.25, 0, -135.233, -0.25, 0, 0.25, 0, -117.946, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.3, 0.8 )
+}
+tracks/12/type = "bezier"
+tracks/12/path = NodePath("Skeleton2D/hip/chest/head/earL:position:x")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"points": PoolRealArray( -18.0942, -0.25, 0, 0.25, 0, -27.944, -0.25, 0, 0.25, 0, -18.0942, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.3, 0.8 )
+}
+tracks/13/type = "bezier"
+tracks/13/path = NodePath("Skeleton2D/hip/chest/head/earL:position:y")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"points": PoolRealArray( -231.003, -0.25, 0, 0.25, 0, -215.86, -0.25, 0, 0.25, 0, -231.003, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.3, 0.8 )
+}
+tracks/14/type = "bezier"
+tracks/14/path = NodePath("Skeleton2D/hip/chest/head/earL:rotation_degrees")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"points": PoolRealArray( -87.9016, -0.25, 0, 0.25, 0, -125.97, -0.25, 0, 0.25, 0, -87.9016, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.3, 0.8 )
+}
+
+[sub_resource type="Animation" id=1]
+resource_name = "idle"
+tracks/0/type = "bezier"
+tracks/0/path = NodePath("Skeleton2D/hip:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( 809.574, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath("Skeleton2D/hip:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( 738.141, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/2/type = "bezier"
+tracks/2/path = NodePath("Skeleton2D/hip:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/3/type = "bezier"
+tracks/3/path = NodePath("Skeleton2D/hip:scale:x")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/4/type = "bezier"
+tracks/4/path = NodePath("Skeleton2D/hip:scale:y")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/5/type = "bezier"
+tracks/5/path = NodePath("Skeleton2D/hip/chest:position:x")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"points": PoolRealArray( 4.19971, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/6/type = "bezier"
+tracks/6/path = NodePath("Skeleton2D/hip/chest:position:y")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"points": PoolRealArray( -195.228, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/7/type = "bezier"
+tracks/7/path = NodePath("Skeleton2D/hip/chest:rotation_degrees")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/8/type = "bezier"
+tracks/8/path = NodePath("Skeleton2D/hip/chest:scale:x")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/9/type = "bezier"
+tracks/9/path = NodePath("Skeleton2D/hip/chest:scale:y")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/10/type = "bezier"
+tracks/10/path = NodePath("Skeleton2D/hip/chest/head:position:x")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"points": PoolRealArray( 0.620789, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/11/type = "bezier"
+tracks/11/path = NodePath("Skeleton2D/hip/chest/head:position:y")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"points": PoolRealArray( -31.498, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/12/type = "bezier"
+tracks/12/path = NodePath("Skeleton2D/hip/chest/head:rotation_degrees")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/13/type = "bezier"
+tracks/13/path = NodePath("Skeleton2D/hip/chest/head:scale:x")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/14/type = "bezier"
+tracks/14/path = NodePath("Skeleton2D/hip/chest/head:scale:y")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/15/type = "bezier"
+tracks/15/path = NodePath("Skeleton2D/hip/chest/head/earR:position:x")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"points": PoolRealArray( -96.1414, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/16/type = "bezier"
+tracks/16/path = NodePath("Skeleton2D/hip/chest/head/earR:position:y")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"points": PoolRealArray( -208.514, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/17/type = "bezier"
+tracks/17/path = NodePath("Skeleton2D/hip/chest/head/earR:rotation_degrees")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"points": PoolRealArray( -117.946, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/18/type = "bezier"
+tracks/18/path = NodePath("Skeleton2D/hip/chest/head/earR:scale:x")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/19/type = "bezier"
+tracks/19/path = NodePath("Skeleton2D/hip/chest/head/earR:scale:y")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/20/type = "bezier"
+tracks/20/path = NodePath("Skeleton2D/hip/chest/head/earL:position:x")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/keys = {
+"points": PoolRealArray( -18.0942, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/21/type = "bezier"
+tracks/21/path = NodePath("Skeleton2D/hip/chest/head/earL:position:y")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/keys = {
+"points": PoolRealArray( -231.003, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/22/type = "bezier"
+tracks/22/path = NodePath("Skeleton2D/hip/chest/head/earL:rotation_degrees")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/keys = {
+"points": PoolRealArray( -87.9016, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/23/type = "bezier"
+tracks/23/path = NodePath("Skeleton2D/hip/chest/head/earL:scale:x")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/24/type = "bezier"
+tracks/24/path = NodePath("Skeleton2D/hip/chest/head/earL:scale:y")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/25/type = "bezier"
+tracks/25/path = NodePath("Skeleton2D/hip/chest/armR:position:x")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/keys = {
+"points": PoolRealArray( -121.053, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/26/type = "bezier"
+tracks/26/path = NodePath("Skeleton2D/hip/chest/armR:position:y")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/keys = {
+"points": PoolRealArray( -5.41919, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/27/type = "bezier"
+tracks/27/path = NodePath("Skeleton2D/hip/chest/armR:rotation_degrees")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/keys = {
+"points": PoolRealArray( 125.592, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/28/type = "bezier"
+tracks/28/path = NodePath("Skeleton2D/hip/chest/armR:scale:x")
+tracks/28/interp = 1
+tracks/28/loop_wrap = true
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/29/type = "bezier"
+tracks/29/path = NodePath("Skeleton2D/hip/chest/armR:scale:y")
+tracks/29/interp = 1
+tracks/29/loop_wrap = true
+tracks/29/imported = false
+tracks/29/enabled = true
+tracks/29/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/30/type = "bezier"
+tracks/30/path = NodePath("Skeleton2D/hip/chest/armL:position:x")
+tracks/30/interp = 1
+tracks/30/loop_wrap = true
+tracks/30/imported = false
+tracks/30/enabled = true
+tracks/30/keys = {
+"points": PoolRealArray( 77.4194, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/31/type = "bezier"
+tracks/31/path = NodePath("Skeleton2D/hip/chest/armL:position:y")
+tracks/31/interp = 1
+tracks/31/loop_wrap = true
+tracks/31/imported = false
+tracks/31/enabled = true
+tracks/31/keys = {
+"points": PoolRealArray( -2.57703, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/32/type = "bezier"
+tracks/32/path = NodePath("Skeleton2D/hip/chest/armL:rotation_degrees")
+tracks/32/interp = 1
+tracks/32/loop_wrap = true
+tracks/32/imported = false
+tracks/32/enabled = true
+tracks/32/keys = {
+"points": PoolRealArray( 54.5437, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/33/type = "bezier"
+tracks/33/path = NodePath("Skeleton2D/hip/chest/armL:scale:x")
+tracks/33/interp = 1
+tracks/33/loop_wrap = true
+tracks/33/imported = false
+tracks/33/enabled = true
+tracks/33/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/34/type = "bezier"
+tracks/34/path = NodePath("Skeleton2D/hip/chest/armL:scale:y")
+tracks/34/interp = 1
+tracks/34/loop_wrap = true
+tracks/34/imported = false
+tracks/34/enabled = true
+tracks/34/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/35/type = "bezier"
+tracks/35/path = NodePath("Skeleton2D/hip/legR:position:x")
+tracks/35/interp = 1
+tracks/35/loop_wrap = true
+tracks/35/imported = false
+tracks/35/enabled = true
+tracks/35/keys = {
+"points": PoolRealArray( -69.2957, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/36/type = "bezier"
+tracks/36/path = NodePath("Skeleton2D/hip/legR:position:y")
+tracks/36/interp = 1
+tracks/36/loop_wrap = true
+tracks/36/imported = false
+tracks/36/enabled = true
+tracks/36/keys = {
+"points": PoolRealArray( 61.9461, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/37/type = "bezier"
+tracks/37/path = NodePath("Skeleton2D/hip/legR:rotation_degrees")
+tracks/37/interp = 1
+tracks/37/loop_wrap = true
+tracks/37/imported = false
+tracks/37/enabled = true
+tracks/37/keys = {
+"points": PoolRealArray( 41.0406, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/38/type = "bezier"
+tracks/38/path = NodePath("Skeleton2D/hip/legR:scale:x")
+tracks/38/interp = 1
+tracks/38/loop_wrap = true
+tracks/38/imported = false
+tracks/38/enabled = true
+tracks/38/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/39/type = "bezier"
+tracks/39/path = NodePath("Skeleton2D/hip/legR:scale:y")
+tracks/39/interp = 1
+tracks/39/loop_wrap = true
+tracks/39/imported = false
+tracks/39/enabled = true
+tracks/39/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/40/type = "bezier"
+tracks/40/path = NodePath("Skeleton2D/hip/legL:position:x")
+tracks/40/interp = 1
+tracks/40/loop_wrap = true
+tracks/40/imported = false
+tracks/40/enabled = true
+tracks/40/keys = {
+"points": PoolRealArray( 34.002, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/41/type = "bezier"
+tracks/41/path = NodePath("Skeleton2D/hip/legL:position:y")
+tracks/41/interp = 1
+tracks/41/loop_wrap = true
+tracks/41/imported = false
+tracks/41/enabled = true
+tracks/41/keys = {
+"points": PoolRealArray( 44.2883, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/42/type = "bezier"
+tracks/42/path = NodePath("Skeleton2D/hip/legL:rotation_degrees")
+tracks/42/interp = 1
+tracks/42/loop_wrap = true
+tracks/42/imported = false
+tracks/42/enabled = true
+tracks/42/keys = {
+"points": PoolRealArray( 41.0406, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/43/type = "bezier"
+tracks/43/path = NodePath("Skeleton2D/hip/legL:scale:x")
+tracks/43/interp = 1
+tracks/43/loop_wrap = true
+tracks/43/imported = false
+tracks/43/enabled = true
+tracks/43/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/44/type = "bezier"
+tracks/44/path = NodePath("Skeleton2D/hip/legL:scale:y")
+tracks/44/interp = 1
+tracks/44/loop_wrap = true
+tracks/44/imported = false
+tracks/44/enabled = true
+tracks/44/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
 
 [node name="Rabbit2D" type="Node2D"]
 scale = Vector2( 0.6, 0.6 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/attack = SubResource( 2 )
+anims/die = SubResource( 4 )
+anims/hurt = SubResource( 3 )
+anims/idle = SubResource( 1 )
 
 [node name="polygons" type="Polygon2D" parent="."]
 
